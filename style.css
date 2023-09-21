@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(241, 241, 169, 0.911);
+}
+
+.container-nav {
+    top: 0;
+    position: sticky;
+    z-index: 3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: blue;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: yellow;
+    margin-top: 4vh;
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.ver-carrito {
+    font-size: 40px;
+    color: white;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.titulo h1 {
+    margin-top: 10px;
+    color: blue;
+    font-size: 70px;
+    text-align: center;
+}
+
+.titulo p {
+    margin-top: -10px;
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card > img {
+    margin-top: 10px;
+    width: 90%;
+    height: 250px;
+}
+
+.precio {
+    color: black;
+    font-size: 25px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0,7;
+}
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    display: flex;
+    background-color: rgb(36, 10, 95);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(36, 10, 95);
+    color: white;
+    width: 100%;
+}
+
+.modal-header-tittle {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.total-content{
+    padding: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.delete-product {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
