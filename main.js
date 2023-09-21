@@ -61,17 +61,6 @@ const productos = [
     },
 ];
 
-const getDatos = () => {
-    return new Promise ((resolve, reject) => {
-        setTimeout (() => {
-            resolve(productos);
-        }, 1500);
-    });
-}
-
-getDatos()
-    .then ((productos) => console.log(productos));
-
 const mercadoContenido = document.getElementById("mercadoContenido");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
@@ -119,3 +108,11 @@ const guardarLocal = () => {
 localStorage.setItem("carro", JSON.stringify (carrito));
 };
 
+document.getElementById("parrafo").addEventListener("click", loadTxt);
+
+function loadTxt () {
+    fetch("data.txt")
+    .then(function(response){
+        console.log(response);
+    });
+};

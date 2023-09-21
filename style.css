@@ -47,6 +47,7 @@ body {
     font-size: 30px;
     color: blue;
     text-align: center;
+    cursor: pointer;
 }
 
 .shop-content {
